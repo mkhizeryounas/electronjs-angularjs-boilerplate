@@ -1,0 +1,35 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build -m",
+    "pack-win": "build -w"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "build": {
+    "appId": "co.shopdesk.canalgarden_billing_system",
+    "productName": "Smart Billing"
+  },
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.13.3"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.17",
+    "angular": "^1.7.0",
+    "jquery": "^3.3.1",
+    "mysql": "^2.15.0"
+  }
+}

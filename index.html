@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Smart Billing</title>
+  </head>
+  <body ng-app="app">
+    <h1>Electronjs & AngularJS Boilerplate!</h1>
+    <ul>
+      <li>
+        <a ui-sref="home">Home</a>
+      </li>
+      <li>
+          <a ui-sref="blank">Blank</a>
+      </li>
+    </ul>
+    <hr>
+
+
+    <ui-view></ui-view>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+
+    <script>
+      require('angular');
+      require('jquery');
+      require('./app/app.js')
+
+      /****** start libraries ******/
+      require('@uirouter/angularjs');
+      /****** end libraries ******/
+      /****** start controllers ******/
+      require('./app/controllers/homeController/home.js');
+      require('./app/controllers/blankController/blank.js');
+      /****** end controllers ******/
+      
+      require('./renderer.js');
+    </script>
+  </body>
+</html>
